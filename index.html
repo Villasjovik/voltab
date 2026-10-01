@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>VOLTAB × Villa Sjövik</title>
 <link rel="icon" type="image/svg+xml" href="./voltab-favicon.svg"/>
-<meta property="og:title" content="VOLTAB × Villa Sjövik — Collaboration proposal 2026"/>
-<meta property="og:description" content="Silent power from VOLTAB in a real Nordic home and garden, in front of 197,000 followers who invest in both."/>
+<meta property="og:title" content="VOLTAB × Villa Sjövik — Image package 2026"/>
+<meta property="og:description" content="Twenty images of VOLTAB GO at work in a real Nordic outdoor setting, with permanent rights for your website, own channels, ads and dealer material."/>
 <meta property="og:image" content="https://villasjovik.github.io/voltab/og-image.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
@@ -14,8 +14,8 @@
 <meta property="og:url" content="https://villasjovik.github.io/voltab/"/>
 <meta property="og:type" content="website"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="VOLTAB × Villa Sjövik — Collaboration proposal 2026"/>
-<meta name="twitter:description" content="Silent power from VOLTAB in a real Nordic home and garden, in front of 197,000 followers who invest in both."/>
+<meta name="twitter:title" content="VOLTAB × Villa Sjövik — Image package 2026"/>
+<meta name="twitter:description" content="Twenty images of VOLTAB GO at work in a real Nordic outdoor setting, with permanent rights for your website, own channels, ads and dealer material."/>
 <meta name="twitter:image" content="https://villasjovik.github.io/voltab/og-image.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -97,7 +97,7 @@ body.ct #cur-r{width:2px;height:26px;border-radius:2px}
   0%,100%{transform:translate(-50%,-50%) translateY(-3px) rotate(45deg)}
   50%{transform:translate(-50%,-50%) translateY(4px) rotate(45deg)}
 }
-/* × monogram divider — register-change joints (spår→profil, profil→pr) */
+/* × monogram divider — register-change joints (mq→profil, profil→pr) */
 .gd.gd-x{background:linear-gradient(90deg,transparent,rgba(212,168,75,.55) 25%,rgba(212,168,75,.9) 43%,transparent 46%,transparent 54%,rgba(212,168,75,.9) 57%,rgba(212,168,75,.55) 75%,transparent)}
 .gd.gd-x::after{content:'×';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
   font-family:'Playfair Display',serif;font-style:italic;font-size:16px;line-height:1;color:rgba(212,168,75,.75);
@@ -232,24 +232,25 @@ max-width:760px;margin-bottom:56px;text-wrap:pretty}
 @keyframes logoFlatFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 .logo-3d-static .logo-flat{animation:logoFlatFloat 11s cubic-bezier(.45,.05,.55,.95) infinite}
 .hero-logo-brand.logo-3d-static .logo-flat{animation-duration:10.4s}
-.hero-logo-vs.logo-3d-static .logo-flat{animation-duration:11.8s;animation-delay:-4s}
-@media(max-width:700px){
-  .hero-logo-vs{max-width:280px!important;max-height:200px!important}
-  .hero-logo-brand{max-width:280px!important;max-height:200px!important}
-}
+.hero-logo-brand.logo-3d-static .logo-flat{filter:none}
 /* VOLTAB: ordmärket är 7:1, så bredden begränsar. Mer bredd åt varumärkessidan på mobil; Villa Sjöviks projicerade storlek är fortfarande taket. */
 @media(max-width:700px){
   .h-side-l{flex:1.45!important}
   .hero-logo-brand{width:56vw!important}
   .hero-logo-vs{width:38vw!important}
 }
+.hero-logo-vs.logo-3d-static .logo-flat{animation-duration:11.8s;animation-delay:-4s}
+@media(max-width:700px){
+  .hero-logo-vs{max-width:280px!important;max-height:200px!important}
+  .hero-logo-brand{max-width:280px!important;max-height:200px!important}
+}
 
 /* DOT TEXTURE */
-#sec-mq::before, #sec-spar::before, #sec-pr::before{
+#sec-mq::before, #sec-pr::before{
   content:'';position:absolute;inset:0;pointer-events:none;z-index:0;
   background-size:28px 28px
 }
-#sec-spar::before, #sec-pr::before{
+#sec-pr::before{
   background-image:
     radial-gradient(circle, rgba(212,168,75,.055) 1px, transparent 1.4px),
     radial-gradient(circle, rgba(212,168,75,.028) 1px, transparent 1.4px);
@@ -368,140 +369,6 @@ max-width:760px;margin-bottom:56px;text-wrap:pretty}
   .mq-mn img{transform:translateY(-5px)}
 }
 
-/* FYRA SPÅR */
-#sec-spar{position:relative;background:linear-gradient(168deg,#2a231c 0%,var(--brn2) 30%,var(--brn) 70%,#110e0b 100%);padding:96px 24px;overflow:hidden;
-  box-shadow:inset 0 90px 120px -70px rgba(0,0,0,.42)}
-.sp-orb{position:absolute;border-radius:50%;filter:blur(130px);pointer-events:none}
-.sp-orb-1{width:600px;height:600px;background:radial-gradient(circle,rgba(212,168,75,.14),transparent);top:-160px;left:-120px;animation:orbf2 26s ease-in-out infinite}
-.sp-inner{position:relative;z-index:1;max-width:1040px;margin:0 auto}
-@property --sp-float{syntax:'<length>';inherits:false;initial-value:0px}
-@property --sp-hover{syntax:'<length>';inherits:false;initial-value:0px}
-.sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;perspective:1800px;perspective-origin:50% 40%}
-.sp-c{padding:42px 32px;border:1px solid rgba(212,168,75,.2);border-top:1px solid rgba(212,168,75,.28);border-radius:20px;
-  display:flex;flex-direction:column;
-  background:
-    linear-gradient(145deg,rgba(212,168,75,.07) 0%,rgba(212,168,75,.02) 55%,rgba(212,168,75,.045) 100%);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  position:relative;overflow:hidden;
-  box-shadow:
-    0 24px 60px rgba(0,0,0,.45),
-    0 8px 18px rgba(0,0,0,.3),
-    inset 0 1px 0 rgba(255,255,255,.06);
-  --sp-rot:0deg;--sp-base-y:0px;--sp-float:0px;--sp-hover:0px;
-  transform-style:preserve-3d;transform-origin:50% 55%;
-  transform:rotateY(calc(var(--sp-rot) + var(--sp-ry,0deg))) rotateX(var(--sp-rx,0deg)) translate3d(var(--sp-sway,0px),calc(var(--sp-base-y) + var(--sp-float) + var(--sp-hover) + var(--sp-entry,0px)),0)!important;
-  animation:sp-float-anim 11s cubic-bezier(.45,.05,.55,.95) infinite;
-  will-change:transform;
-  transition:border-color .35s,box-shadow .4s var(--ease),opacity .8s var(--ease),--sp-hover .55s var(--ease),
-    --sp-rx .5s var(--ease),--sp-ry .5s var(--ease),--sp-entry .9s var(--ease)}
-.sp-c::before{content:'';position:absolute;inset:0;border-radius:20px;pointer-events:none;
-  background:
-    linear-gradient(90deg,rgba(212,168,75,.15),var(--gold),rgba(212,168,75,.15)),
-    radial-gradient(ellipse 120% 60% at 50% -10%,rgba(255,232,180,.12),transparent 55%),
-    radial-gradient(circle at 50% 0%,rgba(212,168,75,.1),transparent 70%);
-  background-size:300% 2px,100% 100%,100% 100%;
-  background-position:130% 0,0 0,0 0;
-  background-repeat:no-repeat;
-  opacity:.7;transition:opacity .4s,background-position .8s var(--ease)}
-.sp-c:hover::before{opacity:1;background-position:0% 0,0 0,0 0}
-/* ghost-numeral engraving — 01/02/03; explicit z-index:0 beats the blanket .sp-c>* rule */
-.sp-c .sp-bg{position:absolute;top:-10px;right:10px;z-index:0;pointer-events:none;user-select:none;
-  font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:112px;line-height:1;
-  color:rgba(212,168,75,.05);transition:color .4s var(--ease)}
-.sp-c .sp-bg::before{content:attr(data-n)}
-.sp-c:hover .sp-bg{color:rgba(212,168,75,.09)}
-/* engineered footers — all tags land on one baseline */
-.sp-foot{margin-top:auto;padding-top:20px;border-top:1px solid rgba(212,168,75,.12)}
-.sp-foot .sp-tag{margin-top:0}
-.sp-c:hover{border-color:rgba(212,168,75,.45);
-  box-shadow:
-    0 40px 90px rgba(0,0,0,.55),
-    0 14px 28px rgba(0,0,0,.38),
-    inset 0 1px 0 rgba(255,255,255,.1);
-  --sp-hover:-10px}
-
-.sp-grid>.sp-c:first-child{--sp-rot:12deg;--sp-base-y:14px;animation-delay:-2.2s}
-.sp-grid>.sp-c:nth-child(2):not(:last-child){--sp-rot:0deg;--sp-base-y:-18px;animation-delay:0s;z-index:2}
-.sp-grid>.sp-c:last-child:not(:first-child):not(:nth-child(2)){--sp-rot:-12deg;--sp-base-y:14px;animation-delay:-5.5s}
-
-.sp-grid.sp-grid-1{grid-template-columns:1fr;max-width:660px;margin-left:auto;margin-right:auto;perspective:none}
-.sp-grid.sp-grid-1>.sp-c{--sp-rot:0deg;--sp-base-y:0px;transform:none!important;animation:none!important;padding:52px 48px;text-align:center;align-items:center}
-.sp-grid.sp-grid-1>.sp-c .sp-tag{align-self:center}
-@media(max-width:640px){.sp-grid.sp-grid-1>.sp-c{padding:32px 24px}}
-.sp-grid.sp-grid-3plus1{grid-template-columns:repeat(3,1fr);gap:22px;perspective-origin:50% 40%;row-gap:36px}
-/* detuned floats — no two cards breathe in phase */
-.sp-grid.sp-grid-3plus1>.sp-c:nth-child(1){--sp-rot:12deg;--sp-base-y:14px;animation-delay:-2.2s;animation-duration:10.4s}
-.sp-grid.sp-grid-3plus1>.sp-c:nth-child(2){--sp-rot:0deg;--sp-base-y:-18px;z-index:2;animation-delay:0s;animation-duration:11.3s}
-.sp-grid.sp-grid-3plus1>.sp-c:nth-child(3){--sp-rot:-12deg;--sp-base-y:14px;animation-delay:-5.5s;animation-duration:12.1s}
-/* Track 04 — carte blanche: quieter fill, stronger frame, crop-mark corners */
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide{grid-column:1/-1;--sp-rot:0deg;--sp-base-y:0px;
-  transform:none!important;animation:none!important;transform-style:flat!important;
-  padding:38px 56px;
-  display:flex;flex-direction:column;gap:24px;align-items:stretch;
-  background:
-    linear-gradient(135deg,rgba(212,168,75,.04) 0%,rgba(212,168,75,.015) 50%,rgba(212,168,75,.03) 100%),
-    var(--brn);
-  border:1px solid rgba(212,168,75,.3);
-  position:relative}
-.sp-c .sp-ct{position:absolute;inset:12px;pointer-events:none;opacity:.5;transition:opacity .4s;z-index:0}
-.sp-ct::before,.sp-ct::after{content:'';position:absolute;width:16px;height:16px;border:0 solid var(--gold)}
-.sp-ct:first-of-type::before{top:0;left:0;border-top-width:1px;border-left-width:1px}
-.sp-ct:first-of-type::after{top:0;right:0;border-top-width:1px;border-right-width:1px}
-.sp-ct:last-of-type::before{bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
-.sp-ct:last-of-type::after{bottom:0;right:0;border-bottom-width:1px;border-right-width:1px}
-.sp-wide:hover .sp-ct{opacity:.9}
-.sp-c.sp-wide .sp-bg{right:18px;left:auto;top:-8px;font-size:96px}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-wide-grid{
-  display:grid;grid-template-columns:1fr 1.8fr;gap:48px;align-items:center}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-wide-grid>p.sp-body{border-left:1px solid rgba(212,168,75,.14);padding-left:44px;max-width:58ch}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-eyebrow{margin-bottom:6px}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide h3{font-size:28px;margin-bottom:6px}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-sub{margin-bottom:0}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-body{margin:0}
-.sp-grid.sp-grid-3plus1>.sp-c.sp-wide>.sp-tag{align-self:flex-start;margin:0}
-
-.sp-grid.sp-grid-3plus1>.sp-divider{
-  /* width:min() — the unresolvable % keeps the divider OUT of intrinsic track sizing
-     (a definite 480px used to floor the 1fr track at 480px on narrow viewports) */
-  grid-column:1/-1;height:1px;width:min(480px,80%);margin:8px auto 0;
-  background:linear-gradient(90deg,transparent 0%,rgba(140,124,108,.32) 35%,rgba(140,124,108,.42) 50%,rgba(140,124,108,.32) 65%,transparent 100%);
-  pointer-events:none;opacity:0;transform:scaleX(.6);
-  transition:opacity .9s var(--ease) .3s,transform .9s cubic-bezier(.16,1,.3,1) .3s}
-.sp-grid.sp-grid-3plus1>.sp-divider.in,
-.in .sp-grid.sp-grid-3plus1>.sp-divider{opacity:1;transform:scaleX(1)}
-@media(max-width:780px){
-  .sp-grid.sp-grid-3plus1{grid-template-columns:minmax(0,1fr);perspective:none}
-  /* :nth-child(n) lifts specificity to 0,4,0 — beats the desktop per-card tilt rules
-     (stacked 1-col cards otherwise keep rotateY(±12deg) with perspective:none, 641–780px) */
-  .sp-grid.sp-grid-3plus1>.sp-c:nth-child(n){--sp-rot:0deg;--sp-base-y:0px}
-  .sp-grid.sp-grid-3plus1>.sp-c.sp-wide{padding:28px 22px;gap:18px}
-  .sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-wide-grid{grid-template-columns:1fr;gap:14px}
-}
-
-/* elliptical drift — float on y, gentle sway on x mid-cycle */
-@keyframes sp-float-anim{
-  0%{--sp-float:0px;--sp-sway:0px}
-  25%{--sp-float:-4px;--sp-sway:2px}
-  50%{--sp-float:-8px;--sp-sway:0px}
-  75%{--sp-float:-4px;--sp-sway:-2px}
-  100%{--sp-float:0px;--sp-sway:0px}
-}
-
-.sp-eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-weight:600}
-.sp-c h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:500;margin-bottom:10px;line-height:1.2}
-.sp-sub{font-family:'Playfair Display',serif;font-style:italic;color:var(--warm);font-size:14px;margin-bottom:18px;
-  padding-left:14px;border-left:2px solid rgba(212,168,75,.35)} /* no-wrap: size frozen — pull-quote hook */
-.sp-c p.sp-body{font-size:var(--t-body);line-height:1.7;color:rgba(242,237,228,.68);margin-bottom:24px}
-.sp-tag{display:inline-block;margin-top:18px;padding:5px 12px;border:1px solid rgba(212,168,75,.3);
-border-radius:100px;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--gold)}
-/* no-wrap: .sp-tag — track-01 chip is near column width; 9.5px@.09em is net NARROWER than 9px@.14em (verify 1280/1440 before re-baseline) */
-.sp-footnote{margin-top:40px;text-align:center;font-size:11.5px;letter-spacing:.04em;
-  color:rgba(242,237,228,.42);font-style:italic;max-width:640px;margin-left:auto;margin-right:auto;line-height:1.7}
-@media(max-width:860px){
-  .sp-grid{grid-template-columns:minmax(0,1fr);perspective:none}
-  .sp-c,.sp-grid>.sp-c:first-child,.sp-grid>.sp-c:nth-child(2):not(:last-child),.sp-grid>.sp-c:last-child:not(:first-child):not(:nth-child(2)){--sp-rot:0deg;--sp-base-y:0px}
-}
-
 /* KANALEN — sticky split ledger: the numbers ARE the imagery */
 #sec-profil{position:relative;background:radial-gradient(ellipse 90% 80% at 50% 42%,#05341B 0%,var(--bg) 72%);padding:120px 24px;
   overflow:hidden;overflow:clip; /* clip ≠ scroll container → the sticky ledger head sticks to the viewport */
@@ -533,7 +400,7 @@ display:flex;align-items:center;gap:16px;margin-bottom:52px}
 .sc{padding:26px 18px;text-align:center;border-right:1px solid rgba(212,168,75,.1);position:relative;overflow:hidden;transition:background .3s;display:grid;grid-template-rows:1fr auto 1fr auto auto;row-gap:6px;min-height:172px;justify-items:center}
 .sc:last-child{border-right:none}
 #sec-profil .sc{grid-template-rows:auto auto auto;justify-items:start;text-align:left;
-  padding:36px 4px;min-height:0;min-width:0;border-right:0;border-bottom:1px solid rgba(212,168,75,.14);row-gap:10px}
+  padding:28px 0;min-height:0;min-width:0;border-right:0;border-bottom:1px solid rgba(212,168,75,.14);row-gap:10px}
 #sec-profil .sc:last-child{border-bottom:0}
 #sec-profil .sc:hover{background:linear-gradient(90deg,rgba(212,168,75,.05),transparent 60%)}
 .sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
@@ -553,6 +420,8 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 #sec-profil .sc-suf{font-size:.5em}
 #sec-pr .sec-h2 em.pi-reach{font-family:'Playfair Display',serif;color:var(--gold);font-style:italic;font-weight:400}
 .sc-suf{font-size:.45em;color:var(--warm)}
+.sc-sub a{color:inherit;text-decoration:underline;text-decoration-color:rgba(240,200,120,.45);text-underline-offset:3px;transition:text-decoration-color .3s}
+.sc-sub a:hover{text-decoration-color:var(--gold)}
 .sc-sub{grid-row:4;font-size:12px;color:rgba(240,200,120,.82);letter-spacing:.06em;margin:0;position:relative;z-index:1}
 #sec-profil .sc-sub{grid-row:3}
 .sc-lbl{grid-row:5;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,237,228,.68);margin:0;position:relative;z-index:1}
@@ -587,6 +456,8 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 .pr-inner .sec-lbl{justify-content:center}
 .pr-inner .sec-lbl::after{content:'';width:32px;height:1px;background:linear-gradient(270deg,var(--gold),transparent)}
 .pr-inner .sec-h2{text-align:center}
+.price-note{max-width:620px;margin:40px auto 0;text-align:center;font-family:'Inter',sans-serif;font-size:12.5px;line-height:1.7;color:var(--muted);letter-spacing:.02em}
+@media(max-width:700px){.price-note{font-size:11.5px;margin-top:32px}}
 .pr-orb{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none}
 .pr-orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(212,168,75,.12),transparent);top:-150px;right:-100px;animation:orbf2 26s ease-in-out infinite}
 /* ambient aura behind the featured card */
@@ -595,8 +466,6 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 @property --pb-hover{syntax:'<length>';inherits:false;initial-value:0px}
 .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:52px;perspective:1800px;perspective-origin:50% 45%;max-width:760px;margin-left:auto;margin-right:auto}
 .price-grid.three{grid-template-columns:repeat(3,1fr);gap:22px;max-width:1120px}
-.price-note{max-width:620px;margin:40px auto 0;text-align:center;font-family:'Inter',sans-serif;font-size:12.5px;line-height:1.7;color:var(--muted);letter-spacing:.02em}
-@media(max-width:700px){.price-note{font-size:11.5px;margin-top:32px}}
 .price-grid.three>.pkg-col:nth-child(2){--pb-rot:calc(4deg * var(--pr-damp,1));animation-delay:-1.5s;animation-duration:15.9s}
 .price-ribbon.kamp{background:#b8472f;color:#f2ede4}
 @media(max-width:980px){.price-grid.three{grid-template-columns:minmax(0,1fr);perspective:none;max-width:none}.price-grid.three>.pkg-col,.price-grid.three>.pkg-col:first-child,.price-grid.three>.pkg-col:last-child{--pb-rot:0deg;--pb-base-y:0px;--pb-scale:1;transform:none!important}}
@@ -623,6 +492,25 @@ background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:
 .price-grid>.pkg-col:not(.featured){--pb-scale:.9}
 .price-grid>.pkg-col.featured{--pb-scale:1;z-index:2}
 .pkg-col:hover{--pb-rot:0deg!important;--pb-hover:-8px}
+
+/* === MUTED REFERENCE PACKAGES — the two campaign packages, shown at rest ===
+   They are there so the full range of fees is visible, nothing else: inert (no tilt, no float,
+   no hover, no pointer events), desaturated and dropped back. All colour and all motion
+   belongs to the live card, so the eye lands there without a single word of selling. */
+.pkg-col.is-muted{--pb-rot:0deg!important;--pb-scale:.86;animation:none!important;pointer-events:none}
+.body-loaded .price-grid>.pkg-col.is-muted.rv:not(.in){--pb-rot:0deg!important}
+.body-loaded .price-grid>.pkg-col.is-muted.rv.in{opacity:.42}
+@media(prefers-reduced-motion:reduce){
+  .body-loaded .price-grid>.pkg-col.is-muted.rv{opacity:.42!important}
+}
+.pkg-col.is-muted .price-box{filter:grayscale(1);
+  border-color:rgba(242,237,228,.14);border-top-color:rgba(242,237,228,.2);
+  background:linear-gradient(145deg,rgba(242,237,228,.035) 0%,rgba(242,237,228,.012) 100%);
+  box-shadow:0 26px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.04)}
+.pkg-col.is-muted .price-box::before{opacity:0}
+.pkg-col.is-muted .price-plate{transform:none;background:rgba(0,0,0,.2);border-color:rgba(242,237,228,.1)}
+.pkg-col.is-muted .price-title{margin-top:14px}
+.pkg-col.is-muted .pi:hover{transform:none}
 
 /* Three-zone signable document. NOTE: backdrop-filter + overflow:hidden removed —
    both flatten 3D and would kill the counter-rotated price plate. */
@@ -703,7 +591,7 @@ box-shadow:
   font-feature-settings:"tnum" 1,"lnum" 1;letter-spacing:-.01em}
 .cu{font-feature-settings:"tnum" 1,"lnum" 1}
 .price-unit{font-family:'Inter',sans-serif;font-size:14px;font-weight:300;color:rgba(242,237,228,.68);display:block;margin-top:8px}
-/* no-wrap: .price-unit long label — size frozen at 14px */
+/* no-wrap: .price-unit "EUR" — size frozen at 14px */
 /* ribbon → centered award tab; drops in with back-ease after the card lands */
 .price-ribbon{position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--gold);color:#1a1410;font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:6px 16px;border-radius:0 0 10px 10px;z-index:2;white-space:nowrap;overflow:hidden}
 /* no-wrap: "Rekommenderat · MEST VÄRDE" ≈213px in ~366px card — clears */
@@ -747,227 +635,6 @@ box-shadow:
 .body-loaded .price-box.in .pi:nth-child(4){animation-delay:.4s}
 .body-loaded .price-box.in .pi:nth-child(5){animation-delay:.46s}
 
-/* Per-paket Reach Boost — green "handle" container ABOVE the price-card. */
-.pkg-boost{
-  width:100%;
-  display:flex;flex-direction:column;
-  background:rgba(8,68,36,.42);
-  border:1px solid rgba(212,168,75,.18);
-  border-radius:18px;
-  color:var(--ink);font-family:'Inter',sans-serif;
-  text-align:left;
-  position:relative;
-  margin-bottom:18px;
-  z-index:2;
-  transition:background .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
-}
-.pkg-boost:hover{
-  background:rgba(12,90,48,.55);
-  border-color:rgba(212,168,75,.32);
-}
-.pkg-boost[aria-pressed="true"]{
-  background:rgba(12,90,48,.62);
-  border-color:rgba(212,168,75,.42);
-  box-shadow:0 -6px 24px rgba(212,168,75,.14),0 0 32px rgba(212,168,75,.08),inset 0 1px 0 rgba(255,255,255,.06);
-}
-/* power-conduit — the switch visibly feeds the card through the 18px gap below */
-.pkg-boost::after{content:'';position:absolute;left:50%;bottom:-18px;width:2px;height:18px;transform:translateX(-50%);
-  background:linear-gradient(180deg,rgba(212,168,75,.45),rgba(212,168,75,.08));
-  opacity:.35;transition:opacity .4s var(--ease),box-shadow .4s var(--ease)}
-.pkg-boost[aria-pressed="true"]::after{opacity:1;box-shadow:0 0 12px rgba(212,168,75,.5)}
-/* energized card — the package absorbs the boost */
-.pkg-boost[aria-pressed="true"]+.price-box{border-color:rgba(212,168,75,.55);
-  box-shadow:0 60px 140px rgba(0,0,0,.78),0 26px 52px rgba(0,0,0,.55),0 0 110px rgba(212,168,75,.18),inset 0 1px 0 rgba(255,255,255,.1)}
-/* Header row — always visible — switch + tag + title + price. */
-.pkg-boost-head{
-  display:flex;align-items:flex-start;gap:14px;
-  padding:14px 18px;
-  width:100%;
-  background:transparent;border:0;
-  font:inherit;color:inherit;
-  cursor:pointer;text-align:left;
-  border-radius:18px 18px 0 0;
-  position:relative;
-  transition:background .25s var(--ease);
-}
-.pkg-boost-head:hover{background:rgba(255,255,255,.02)}
-.pkg-boost-head:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
-/* auto-demo stagecraft — gold shimmer across the head while the demo runs */
-.pkg-boost.is-demo .pkg-boost-head{overflow:hidden;border-radius:inherit}
-.pkg-boost.is-demo .pkg-boost-head::before{content:'';position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(105deg,transparent 30%,rgba(240,200,120,.12) 50%,transparent 70%);
-  transform:translateX(-100%);animation:demoShimmer 1.2s var(--ease) 2}
-@keyframes demoShimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
-.pkg-boost-switch{
-  width:38px;height:22px;flex-shrink:0;margin-top:2px;
-  background:rgba(242,237,228,.14);border-radius:100px;
-  position:relative;transition:background-color .3s ease,background .3s ease,box-shadow .3s ease;
-}
-.pkg-boost-switch::before{content:'';position:absolute;inset:-3px;border-radius:100px;pointer-events:none}
-.pkg-boost-switch::after{
-  content:'';position:absolute;top:2px;left:2px;
-  width:18px;height:18px;background:#F7F2E7;border-radius:50%;
-  transition:transform .35s cubic-bezier(.34,1.56,.64,1);
-  box-shadow:0 2px 6px rgba(0,0,0,.2),0 0 0 .5px rgba(0,0,0,.04);
-}
-/* on-state: 3-stop gold leaf, never iOS green */
-.pkg-boost[aria-pressed="true"] .pkg-boost-switch{
-  background:linear-gradient(135deg,#b8923f,#D4A84B 60%,#F0C878);
-  box-shadow:0 0 14px rgba(212,168,75,.45)}
-.pkg-boost[aria-pressed="true"] .pkg-boost-switch::after{transform:translateX(16px)}
-/* activation choreography — double-overshoot knob + one ring pulse */
-.pkg-boost.just-on .pkg-boost-switch::after{animation:knobSpring .5s var(--ease) both}
-@keyframes knobSpring{0%{transform:translateX(0)}55%{transform:translateX(19px)}75%{transform:translateX(15px)}100%{transform:translateX(16px)}}
-.pkg-boost.just-on .pkg-boost-switch::before{box-shadow:0 0 0 0 rgba(212,168,75,.55);animation:ringPulse .6s var(--ease) .06s 1 both}
-@keyframes ringPulse{to{box-shadow:0 0 0 14px rgba(212,168,75,0)}}
-/* spark burst — rhymes with the hero 3D sparks */
-.bst-spark{position:absolute;width:4px;height:4px;margin:-2px 0 0 -2px;border-radius:50%;z-index:5;
-  background:var(--gold2);box-shadow:0 0 6px var(--gold);pointer-events:none}
-.pkg-boost-text{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
-.pkg-boost-tag{
-  align-self:flex-start;
-  font-family:'Inter',sans-serif;font-size:9px;font-weight:600;
-  letter-spacing:.22em;text-transform:uppercase;
-  padding:3px 9px;margin-bottom:3px;
-  border-radius:100px;
-  background:rgba(212,168,75,.08);
-  border:1px solid rgba(212,168,75,.22);
-  color:rgba(242,237,228,.55);
-  transition:background .35s var(--ease),border-color .35s var(--ease),color .35s var(--ease);
-}
-.pkg-boost-tag em{font-style:normal;color:var(--gold);font-weight:700}
-.pkg-boost:hover .pkg-boost-tag{background:rgba(212,168,75,.16);border-color:rgba(212,168,75,.4)}
-.pkg-boost[aria-pressed="true"] .pkg-boost-tag{background:rgba(212,168,75,.16);border-color:rgba(212,168,75,.45);color:rgba(242,237,228,.85)}
-.pkg-boost[aria-pressed="true"] .pkg-boost-tag em{color:var(--gold2)}
-.pkg-boost-title{
-  font-size:13px;font-weight:600;letter-spacing:.015em;color:var(--ink);
-  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
-  transition:color .35s var(--ease);
-}
-.pkg-boost[aria-pressed="true"] .pkg-boost-title{color:var(--gold)}
-.pkg-boost-price{
-  font-size:11px;font-weight:600;color:var(--gold);
-  letter-spacing:.06em;text-transform:uppercase;
-  display:inline-block;
-  transition:opacity .3s var(--ease);
-}
-.pkg-boost-price.is-zero{opacity:.4}
-.pkg-boost[aria-pressed="false"] .pkg-boost-price{display:none}
-
-/* Collapsible body — desc + per-card slider */
-.pkg-boost-body{
-  display:grid;
-  grid-template-rows:0fr;
-  transition:grid-template-rows .55s cubic-bezier(.45,.05,.55,.95);
-  width:100%;
-}
-.pkg-boost[aria-pressed="true"] .pkg-boost-body{
-  grid-template-rows:1fr;
-}
-.pkg-boost-body-inner{
-  overflow:hidden;
-  min-height:0;
-  padding:0 18px;
-}
-.pkg-boost-desc,.pkg-boost-desc-zero{
-  font-size:var(--t-meta);color:rgba(242,237,228,.68);
-  line-height:1.55;letter-spacing:.005em;
-  margin:0;padding:0 0 14px;
-  opacity:0;transform:translateY(6px);
-  transition:color .35s var(--ease),opacity .45s var(--ease) .18s,transform .45s var(--ease) .18s;
-}
-.pkg-boost[aria-pressed="true"] .pkg-boost-desc,
-.pkg-boost[aria-pressed="true"] .pkg-boost-desc-zero{color:rgba(242,237,228,.78);opacity:1;transform:none}
-.pkg-boost-stat{
-  color:var(--gold);font-weight:600;letter-spacing:.015em;
-  white-space:nowrap;
-}
-.pkg-boost[aria-pressed="true"] .pkg-boost-stat{
-  text-shadow:0 0 18px rgba(212,168,75,.35);
-}
-
-/* Per-card budget slider — inside expanded green box */
-.pkg-slider{
-  padding:14px 0 16px;
-  border-top:1px solid rgba(212,168,75,.14);
-  position:relative;
-  opacity:0;transform:translateY(6px);
-  transition:opacity .45s var(--ease) .3s,transform .45s var(--ease) .3s;
-}
-.pkg-boost[aria-pressed="true"] .pkg-slider{opacity:1;transform:none}
-/* value puff above the thumb while dragging */
-.pk-out{position:absolute;bottom:46px;left:33%;transform:translate(-50%,4px);z-index:3;pointer-events:none;
-  font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.06em;color:#1a1410;
-  background:var(--gold);border-radius:8px;padding:3px 8px;white-space:nowrap;
-  opacity:0;transition:opacity .25s var(--ease),transform .25s var(--ease)}
-.pk-out.show{opacity:1;transform:translate(-50%,0)}
-.pkg-slider-lbl{
-  display:block;
-  font-family:'Inter',sans-serif;font-size:9.5px;font-weight:600;
-  letter-spacing:.22em;text-transform:uppercase;
-  color:rgba(212,168,75,.78);
-  margin-bottom:12px;
-}
-.pkg-range{
-  -webkit-appearance:none;appearance:none;width:100%;height:22px;
-  background:transparent;outline:0;cursor:pointer;margin:0;
-}
-.pkg-range::-webkit-slider-runnable-track{height:4px;border-radius:99px;
-  background:linear-gradient(to right,var(--gold) 0%,var(--gold) var(--pk-fill,33%),rgba(212,168,75,.18) var(--pk-fill,33%),rgba(212,168,75,.18) 100%)}
-.pkg-range::-moz-range-track{height:4px;border-radius:99px;background:rgba(212,168,75,.18)}
-.pkg-range::-moz-range-progress{height:4px;border-radius:99px;background:var(--gold)}
-.pkg-range::-webkit-slider-thumb{
-  -webkit-appearance:none;appearance:none;
-  width:18px;height:18px;border-radius:50%;
-  background:var(--gold);
-  margin-top:-7px;
-  cursor:grab;
-  border:2px solid #1a1410;
-  box-shadow:0 3px 10px rgba(0,0,0,.45),0 0 14px rgba(212,168,75,.45);
-  transition:transform .2s var(--ease),box-shadow .2s var(--ease);
-}
-.pkg-range::-moz-range-thumb{
-  width:18px;height:18px;border-radius:50%;
-  background:var(--gold);cursor:grab;border:2px solid #1a1410;
-  box-shadow:0 3px 10px rgba(0,0,0,.45),0 0 14px rgba(212,168,75,.45);
-}
-.pkg-range:hover::-webkit-slider-thumb{transform:scale(1.12);box-shadow:0 4px 14px rgba(0,0,0,.55),0 0 18px rgba(212,168,75,.6)}
-.pkg-range:active::-webkit-slider-thumb{transform:scale(1.22);cursor:grabbing}
-.pkg-ticks{
-  position:relative;display:block;height:26px;
-  margin-top:8px;padding:0;
-  font-family:'Inter',sans-serif;font-size:10px;font-weight:500;
-  letter-spacing:.06em;color:rgba(242,237,228,.6);
-  font-feature-settings:"tnum";
-}
-/* ticks ligger på thumb-CENTRETS bana: center = (i/3)·(100% − thumbW) + thumbW/2, thumbW=22px (18+2·2 border) */
-.pkg-tick{
-  position:absolute;top:2px;left:calc((100% - 22px)*var(--tp,0) + 11px);
-  display:inline-flex;flex-direction:column;align-items:center;gap:4px;
-  cursor:pointer;white-space:nowrap;
-  transition:color .25s var(--ease),transform .25s var(--ease);
-  transform:translateX(-50%);
-}
-.pkg-tick:nth-child(1){--tp:0}
-.pkg-tick:nth-child(2){--tp:.33333}
-.pkg-tick:nth-child(3){--tp:.66667}
-.pkg-tick:nth-child(4){--tp:1}
-.pkg-tick.is-active{transform:translateX(-50%) translateY(-1px)}
-.pkg-tick::before{
-  content:'';position:absolute;top:-9px;left:50%;transform:translateX(-50%);
-  width:1px;height:5px;background:rgba(212,168,75,.25);
-}
-.pkg-tick.is-active{color:var(--gold);font-weight:700}
-.pkg-tick.is-active::before{background:var(--gold);width:2px;box-shadow:0 0 8px rgba(212,168,75,.6)}
-.pkg-tick:hover{color:rgba(242,237,228,.75)}
-
-@media(max-width:560px){
-  .pkg-boost-head{gap:11px;padding:12px 14px}
-  .pkg-boost-body-inner{padding:0 14px}
-  .pkg-boost-title{font-size:12px}
-  .pkg-boost-desc{font-size:11px}
-}
 @media(max-width:700px){
   .price-grid{grid-template-columns:minmax(0,1fr);perspective:none;max-width:none}
   .pkg-col,.price-grid>.pkg-col:first-child,.price-grid>.pkg-col:last-child{--pb-rot:0deg;--pb-base-y:0px;--pb-scale:1;transform:none!important}
@@ -975,6 +642,7 @@ box-shadow:
   .price-plate{transform:none!important;margin:0}
   .pr-sheen{display:none!important}
 }
+
 
 /* CTA — brightest green + gold dawn under the contact card: the handshake at first light */
 #sec-cta{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;
@@ -1229,7 +897,6 @@ position:relative;overflow:hidden;transition:color .35s}
   .body-loaded .sec-lbl.rv{letter-spacing:.26em}
   .body-loaded .price-box .price-ribbon{transform:translate(-50%,0)!important;opacity:1!important}
   .body-loaded .price-box .pi{opacity:1!important}
-  .pkg-boost-desc,.pkg-boost-desc-zero,.pkg-slider{opacity:1!important;transform:none!important}
   .price-orig::after{transform:scaleX(1)!important}
   .sec-h2 em{background-size:100% 1px!important}
   .body-loaded .sp-c.rv,.body-loaded .pkg-col.rv{--sp-entry:0px;--pb-entry:0px}
@@ -1272,7 +939,6 @@ position:relative;overflow:hidden;transition:color .35s}
   .price-grid{grid-template-columns:minmax(0,1fr)!important;perspective:none!important;gap:14px}
   .price-box{padding:28px 22px!important;transform:none!important}
   .sp-bg,.pr-bg{display:none!important}
-  .sp-grid.sp-grid-3plus1>.sp-c.sp-wide .sp-wide-grid>p.sp-body{border-left:0;padding-left:0}
   .mq-track{animation-duration:28s!important}
   .mq-track img{max-height:36px!important}
   section{padding:56px 18px!important}
@@ -1352,7 +1018,7 @@ position:relative;overflow:hidden;transition:color .35s}
       </div>
     </div>
     <div class="h-tag-p" data-par="5,4">
-    <h1 class="h-tagline">Silent power from VOLTAB in a real Nordic home and garden, in front of <em>197,000 followers</em> who invest in both.</h1>
+    <h1 class="h-tagline">VOLTAB GO, photographed in a real Nordic outdoor setting for <em>your own channels.</em></h1>
     </div>
     <div class="h-scroll" aria-hidden="true">
       <span>Explore</span>
@@ -1400,64 +1066,6 @@ position:relative;overflow:hidden;transition:color .35s}
   </div>
 </div>
 
-<div class="gd"></div>
-
-<!-- ETT SPÅR -->
-<section id="sec-spar">
-  <div class="sp-orb sp-orb-1" aria-hidden="true"></div>
-  <div class="sp-inner">
-    <p class="sec-lbl rv">Three ideas, one open route</p>
-    <h2 class="sec-h2 ws rv">Three ways to bring VOLTAB into <em>Nordic homes.</em></h2>
-    <div class="sp-grid sp-grid-3plus1">
-
-      <div class="sp-c rv d1">
-        <i class="sp-bg" data-n="01" aria-hidden="true"></i>
-        <p class="sp-eyebrow">Route 01</p>
-        <h3>The generator you can’t hear</h3>
-        <p class="sp-sub">“Show the difference, not the spec sheet”</p>
-        <p class="sp-body">Power away from the socket still means a petrol generator to most people: noise, exhaust and a can of fuel. VOLTAB GO is built to replace it, and the difference is easiest to understand when it is seen and heard. Villa Sjövik lets it carry a long evening outdoors, with the lights and the music on and no engine to talk over. The goal is that Nordic buyers see battery power as the natural choice, and turn to VOLTAB for a quote.</p>
-        <div class="sp-foot"><span class="sp-tag">Category shift &middot; Nordic buyers &middot; Quote requests</span></div>
-      </div>
-
-      <div class="sp-c rv d2">
-        <i class="sp-bg" data-n="02" aria-hidden="true"></i>
-        <p class="sp-eyebrow">Route 02</p>
-        <h3>Ready when the power goes</h3>
-        <p class="sp-sub">“A reason to buy that lives in the home”</p>
-        <p class="sp-body">When the grid drops, VOLTAB GO takes over in less than 20 milliseconds and keeps a fridge running for over a day. That makes it something a household keeps at home, ready for the day it is needed. Villa Sjövik shows it as part of a well prepared home, calmly and practically. The goal is a private buyer segment next to VOLTAB’s professional sectors, with a reason to buy that holds all year.</p>
-        <div class="sp-foot"><span class="sp-tag">Private buyers &middot; Home preparedness &middot; Year-round demand</span></div>
-      </div>
-
-      <div class="sp-c rv d3">
-        <i class="sp-bg" data-n="03" aria-hidden="true"></i>
-        <p class="sp-eyebrow">Route 03</p>
-        <h3>A Nordic face for VOLTAB</h3>
-        <p class="sp-sub">“Material that works in every Nordic market”</p>
-        <p class="sp-body">VOLTAB’s use cases run from building sites and events to boats and vans. Villa Sjövik adds the private Nordic home and garden: power for the garden, e-bikes charged together for the next trip, the weekend away from the socket. Everything is delivered with permanent usage rights. The goal is one body of Nordic material VOLTAB can use in its own channels and advertising, and when presenting the brand to new dealers.</p>
-        <div class="sp-foot"><span class="sp-tag">Owned content &middot; Nordic credibility &middot; Dealer growth</span></div>
-      </div>
-
-      <div class="sp-divider rv" aria-hidden="true"></div>
-
-      <div class="sp-c sp-wide rv d4">
-        <i class="sp-ct" aria-hidden="true"></i>
-        <i class="sp-ct" aria-hidden="true"></i>
-        <i class="sp-bg" data-n="04" aria-hidden="true"></i>
-        <div class="sp-wide-grid">
-          <div>
-            <p class="sp-eyebrow">Route 04</p>
-            <h3>Your setup</h3>
-            <p class="sp-sub">“Shaped around VOLTAB’s own priorities”</p>
-          </div>
-          <p class="sp-body">The routes above are examples of how a collaboration could look, not a fixed format. Share the product, the season or the moment that matters most to VOLTAB right now, and Villa Sjövik shapes the whole thing around it.</p>
-        </div>
-        <span class="sp-tag">Product priority &middot; Your brief &middot; Flexible campaign</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <div class="gd gd-x"></div>
 
 <!-- KANALEN -->
@@ -1467,29 +1075,28 @@ position:relative;overflow:hidden;transition:color .35s}
   <div class="p-spot" aria-hidden="true"></div>
   <div class="sec-inner">
     <div class="profil-head">
-      <p class="sec-lbl rv">Media kit</p>
-      <h2 class="sec-h2 ws rv">Inspiration for an audience that invests in <em>home and garden.</em></h2>
+      <p class="sec-lbl rv">The perspective</p>
+      <h2 class="sec-h2 ws rv">Created with the eye behind an audience that invests in <em>home and garden.</em></h2>
     </div>
-    <!-- Instagram Insights: IMG_8715.png (gender/age), VS referens. -->
-    <!-- Landskortet borttaget ur kanon (Lucas 2026-09-18). Korten staplas i en kolumn och rubriken till vänster följer med vid skroll, som V2-formen (Lucas 2026-09-21). -->
-    <div class="stats-grid" lang="en">
+    <!-- Instagram Insights: IMG_8715.png (gender/age), VS referens. Tre kort staplade i en kolumn (Lucas 2026-09-21). -->
+    <div class="stats-grid">
       <div class="sc rv d1">
         <div class="sc-bg" aria-hidden="true">197</div>
         <span class="sc-num"><span class="cu" data-v="197000" data-sep="true">197,000</span></span>
         <p class="sc-sub">165k Instagram &middot; 32k Facebook</p>
-        <p class="sc-lbl">Followers in total</p>
+        <p class="sc-lbl">Followers behind Villa Sjövik</p>
       </div>
       <div class="sc rv d2">
-        <div class="sc-bg sc-bg-sym" aria-hidden="true">&amp;</div>
-        <span class="sc-num sc-text">Home &amp; garden</span>
-        <p class="sc-sub">Interiors &middot; Home life &middot; Garden</p>
-        <p class="sc-lbl">Niche &amp; audience</p>
-      </div>
-      <div class="sc rv d3">
         <div class="sc-bg" aria-hidden="true">95</div>
         <span class="sc-num"><span class="cu" data-v="95">95</span>% <span class="sc-suf">women</span></span>
         <p class="sc-sub">77.4% aged 45 or over</p>
         <p class="sc-lbl">Instagram audience</p>
+      </div>
+      <div class="sc rv d3">
+        <div class="sc-bg" aria-hidden="true">∞</div>
+        <span class="sc-num sc-text">Permanent</span>
+        <p class="sc-sub">Own channels &middot; Website &middot; Ads &middot; Dealers</p>
+        <p class="sc-lbl">Media rights</p>
       </div>
     </div>
   </div>
@@ -1502,44 +1109,44 @@ position:relative;overflow:hidden;transition:color .35s}
   <div class="pr-orb pr-orb-1" aria-hidden="true"></div>
   <div class="pr-orb pr-orb-2" aria-hidden="true"></div>
   <div class="pr-inner">
-    <p class="sec-lbl rv">Collaboration overview</p>
-    <h2 class="sec-h2 ws rv" lang="en">Two ways to build <em class="pi-reach">story and reach.</em></h2>
+    <p class="sec-lbl rv">Investment</p>
+    <h2 class="sec-h2 ws rv">One package to <em class="pi-reach">start with.</em></h2>
 
-    <div class="price-grid">
+    <div class="price-grid three">
 
-      <div class="pkg-col rv d1" data-pkg-col="start">
-        <div class="pkg-boost" role="group" aria-pressed="false" data-pkg="start">
-          <button type="button" class="pkg-boost-head" aria-pressed="false" aria-controls="pkg-boost-body-start" aria-label="Activate Meta reach for Video Pack">
-            <span class="pkg-boost-switch" aria-hidden="true"></span>
-            <span class="pkg-boost-text">
-              <span class="pkg-boost-tag">Optional &middot; <em>Reach Boost</em></span>
-              <span class="pkg-boost-title">Meta reach budget <span class="pkg-boost-price" data-bt-price="start">+€1,000</span></span>
-            </span>
-          </button>
-          <div class="pkg-boost-body" id="pkg-boost-body-start" aria-hidden="true">
-            <div class="pkg-boost-body-inner">
-              <p class="pkg-boost-desc" data-pkg-desc="start">Over <strong class="pkg-boost-stat" data-bt-stat="start">150,000</strong> extra impressions. Meta retargeting brings viewers back with a clickable link on the video in Instagram and Facebook, directing traffic to voltab.energy</p>
-              <p class="pkg-boost-desc-zero" data-pkg-desc-zero="start" hidden>Choose a budget below to see how many extra impressions the package delivers.</p>
-              <div class="pkg-slider">
-                <label class="pkg-slider-lbl" for="pk-range-start">Meta budget per production</label>
-                <input id="pk-range-start" class="pkg-range" type="range" min="0" max="3" step="1" value="2" data-pkg-slider="start" aria-label="Meta budget per production for Video Pack"/>
-                <div class="pkg-ticks" aria-hidden="true">
-                  <span class="pkg-tick" data-pkg-tick="start" data-step="0">€0</span>
-                  <span class="pkg-tick" data-pkg-tick="start" data-step="1">€500</span>
-                  <span class="pkg-tick is-active" data-pkg-tick="start" data-step="2">€1,000</span>
-                  <span class="pkg-tick" data-pkg-tick="start" data-step="3">€2,000</span>
-                </div>
-              </div>
-            </div>
+      <!-- Image package — the only live package -->
+      <div class="pkg-col featured rv d1" data-pkg-col="content">
+        <div class="price-box featured rv" data-pkg-box="content">
+          <i class="pr-sheen" aria-hidden="true"></i>
+          <i class="pr-bg" data-n="01" aria-hidden="true"></i>
+          <span class="price-ribbon">Recommended for VOLTAB</span>
+          <h3 class="price-title">Image Package</h3>
+          <p class="price-sub">20 images &middot; permanent rights</p>
+          <div class="price-plate">
+          <p class="price-total-lbl">Price</p>
+          <p class="price-total">1,200</p>
+          <span class="price-unit">EUR</span>
+          </div>
+          <div class="price-includes">
+            <p class="pi hi"><span>20 images across product images, close-ups and lifestyle images in a real Nordic outdoor setting</span></p>
+            <p class="pi hi"><span>Permanent media rights for your website, own channels, paid ads and dealer material, with no time limit</span></p>
+            <p class="pi hi"><span>All 20 images delivered to VOLTAB, ready to use across your markets and dealers</span></p>
+            <p class="pi"><span>Built around VOLTAB GO, or any other unit you choose from the range</span></p>
+            <p class="pi"><span>Styling, photography and editing included</span></p>
           </div>
         </div>
+      </div>
+
+      <!-- Package 02 — muted reference, inert -->
+      <div class="pkg-col is-muted rv d2" aria-disabled="true" data-pkg-col="start">
         <div class="price-box rv" data-pkg-box="start">
-          <i class="pr-bg" data-n="01" aria-hidden="true"></i>
+          <i class="pr-bg" data-n="02" aria-hidden="true"></i>
+          <span class="price-ribbon ribbon-muted">Full campaign</span>
           <h3 class="price-title">Video Pack</h3>
           <p class="price-sub">1 video &middot; 2 stories with CTA &middot; 10 lifestyle images</p>
           <div class="price-plate">
-          <p class="price-total-lbl">Production fee</p>
-          <p class="price-total" data-base="1850" data-boost="2850">1,850</p>
+          <p class="price-total-lbl">Price</p>
+          <p class="price-total" data-base="1850" data-boost="1850">1,850</p>
           <span class="price-unit">EUR</span>
           </div>
           <div class="price-includes">
@@ -1552,43 +1159,17 @@ position:relative;overflow:hidden;transition:color .35s}
         </div>
       </div>
 
-      <!-- Kampanjpaket (featured) -->
-      <div class="pkg-col featured rv d2" data-pkg-col="season">
-        <div class="pkg-boost" role="group" aria-pressed="false" data-pkg="season">
-          <button type="button" class="pkg-boost-head" aria-pressed="false" aria-controls="pkg-boost-body-season" aria-label="Activate Meta reach for Campaign Package">
-            <span class="pkg-boost-switch" aria-hidden="true"></span>
-            <span class="pkg-boost-text">
-              <span class="pkg-boost-tag">Optional &middot; <em>Reach Boost</em></span>
-              <span class="pkg-boost-title">Meta reach budget <span class="pkg-boost-price" data-bt-price="season">+€3,000</span></span>
-            </span>
-          </button>
-          <div class="pkg-boost-body" id="pkg-boost-body-season" aria-hidden="true">
-            <div class="pkg-boost-body-inner">
-              <p class="pkg-boost-desc" data-pkg-desc="season">All three productions receive retargeting. The videos are shown again to previous viewers, adding over <strong class="pkg-boost-stat" data-bt-stat="season">450,000</strong> impressions with clickable links that direct traffic to voltab.energy.</p>
-              <p class="pkg-boost-desc-zero" data-pkg-desc-zero="season" hidden>Choose a budget below to see how many extra impressions the package delivers.</p>
-              <div class="pkg-slider">
-                <label class="pkg-slider-lbl" for="pk-range-season">Meta budget per production</label>
-                <input id="pk-range-season" class="pkg-range" type="range" min="0" max="3" step="1" value="2" data-pkg-slider="season" aria-label="Meta budget per production for Campaign Package"/>
-                <div class="pkg-ticks" aria-hidden="true">
-                  <span class="pkg-tick" data-pkg-tick="season" data-step="0">€0</span>
-                  <span class="pkg-tick" data-pkg-tick="season" data-step="1">€500</span>
-                  <span class="pkg-tick is-active" data-pkg-tick="season" data-step="2">€1,000</span>
-                  <span class="pkg-tick" data-pkg-tick="season" data-step="3">€2,000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="price-box featured rv" data-pkg-box="season">
-          <i class="pr-sheen" aria-hidden="true"></i>
-          <i class="pr-bg" data-n="02" aria-hidden="true"></i>
-          <span class="price-ribbon">Recommended &middot; BEST VALUE</span>
+      <!-- Package 03 — muted reference, inert -->
+      <div class="pkg-col is-muted rv d3" aria-disabled="true" data-pkg-col="season">
+        <div class="price-box rv" data-pkg-box="season">
+          <i class="pr-bg" data-n="03" aria-hidden="true"></i>
+          <span class="price-ribbon ribbon-muted">Full campaign</span>
           <h3 class="price-title">Campaign Package</h3>
           <p class="price-sub">3 videos &middot; 6 stories with CTA &middot; 60 lifestyle images</p>
           <div class="price-plate">
-          <p class="price-total-lbl">Production fee</p>
-          <p class="price-orig" data-base="reg. €5,550" data-boost="reg. €8,550">reg. €5,550</p>
-          <p class="price-total" data-base="3500" data-boost="6500">3,500</p>
+          <p class="price-total-lbl">Price</p>
+          <p class="price-orig" data-base="reg. €5,550" data-boost="reg. €5,550">reg. €5,550</p>
+          <p class="price-total" data-base="3500" data-boost="3500">3,500</p>
           <span class="price-unit">EUR</span>
           </div>
           <div class="price-includes">
@@ -1617,13 +1198,13 @@ position:relative;overflow:hidden;transition:color .35s}
   <div class="cta-inner">
     <p class="cta-tag rv">What happens next?</p>
     <h2 class="rv">
-      <span class="cta-l1 ws">Let's set up</span><br>
+      <span class="cta-l1 ws">We book</span><br>
       <em class="cta-l2 ws">a meeting.</em>
     </h2>
     <!-- hierarchy inversion: the meeting is the primary action — filled gold, visually first (flex order; DOM order = base for the copy-freeze) -->
     <div class="cta-btns rv">
       <div class="mag-w mag-mail">
-        <a class="mag-btn ghost ch" href="mailto:kontakt@villasjovik.se?subject=VOLTAB%20%C3%97%20Villa%20Sj%C3%B6vik%20-%20Collaboration%202026">
+        <a class="mag-btn ghost ch" href="mailto:kontakt@villasjovik.se?subject=VOLTAB%20%C3%97%20Villa%20Sj%C3%B6vik%3A%20Image%20package%202026">
           <span>Send email &rarr;</span>
         </a>
       </div>
@@ -1636,10 +1217,10 @@ position:relative;overflow:hidden;transition:color .35s}
 
     <!-- BOKNINGSFLOW -->
     <div class="bk-wrap">
-      <div class="bk-panel" id="bk-panel" role="region" aria-label="Booking flow" aria-hidden="true">
+      <div class="bk-panel" id="bk-panel" role="region" aria-label="Meeting booking" aria-hidden="true">
         <div class="bk-card">
           <div class="bk-head">
-            <h3 class="bk-title">Book a <em>digital meeting</em></h3>
+            <h3 class="bk-title">Book a <em>video meeting</em></h3>
             <button class="bk-close ch" type="button" id="bk-close" aria-label="Close">×</button>
           </div>
 
@@ -1654,7 +1235,7 @@ position:relative;overflow:hidden;transition:color .35s}
           <!-- STAGE 1: DATUM -->
           <div class="bk-stage active" data-stage="1">
             <h3>Choose a date</h3>
-            <p class="bk-sub">Digital meeting via Google Meet — 30 min. A link is sent with the confirmation.</p>
+            <p class="bk-sub">30-minute video meeting via Google Meet. The link is included with the confirmation.</p>
             <div class="bk-cal-head">
               <span class="bk-cal-month" id="bk-cal-month"></span>
               <div class="bk-cal-nav">
@@ -1693,7 +1274,7 @@ position:relative;overflow:hidden;transition:color .35s}
           <!-- STAGE 3: UPPGIFTER -->
           <div class="bk-stage" data-stage="3">
             <h3>Your details</h3>
-            <p class="bk-sub">We will confirm the booking within 24h.</p>
+            <p class="bk-sub">The booking is confirmed within 24 hours.</p>
             <div class="bk-summary" id="bk-summary"></div>
             <div class="bk-error" id="bk-err" style="display:none"></div>
             <form class="bk-form" id="bk-form" novalidate>
@@ -1707,7 +1288,7 @@ position:relative;overflow:hidden;transition:color .35s}
               </div>
               <div class="bk-field bk-full">
                 <label for="bk-msg">Anything to share before the meeting? <span style="opacity:.5;text-transform:none;letter-spacing:0">(optional)</span></label>
-                <textarea id="bk-msg" name="message" placeholder="Any thoughts, questions or requests — otherwise we can cover it in the meeting."></textarea>
+                <textarea id="bk-msg" name="message" placeholder="Questions, context or preferences can be added here."></textarea>
               </div>
             </form>
             <div class="bk-nav">
@@ -1720,8 +1301,8 @@ position:relative;overflow:hidden;transition:color .35s}
           <div class="bk-stage" data-stage="4">
             <div class="bk-done">
               <div class="bk-done-icon">✓</div>
-              <h3>Thank you — <em>your booking has been sent.</em></h3>
-              <p id="bk-done-text">We will reply within 24h with a calendar invitation and confirmation.</p>
+              <h3>Thank you. <em>Your request has been sent.</em></h3>
+              <p id="bk-done-text">A calendar invitation and time confirmation will follow within 24 hours.</p>
             </div>
             <div class="bk-nav" style="justify-content:center;border-top:none;padding-top:8px">
               <button class="bk-btn ghost ch" type="button" id="bk-done-close">Close</button>
@@ -1734,11 +1315,11 @@ position:relative;overflow:hidden;transition:color .35s}
     <div class="cta-div" aria-hidden="true"></div>
     <div class="cta-con rv">
       <img loading="lazy" decoding="async" class="cta-logo" src="villasjovik.svg" alt="Villa Sjövik">
-      <p class="cta-name">Carin Norberg</p>
+      <p class="cta-name">Villa Sjövik</p>
       <p class="cta-det">
-        Designer &middot; Villa Sjövik<br>
+        Designer<br>
         <a href="mailto:kontakt@villasjovik.se">kontakt@villasjovik.se</a><br>
-        070&ndash;65 66 596<br>
+        +46 70 65 66 596<br>
         <a href="https://www.villasjovik.se" target="_blank" rel="noopener">www.villasjovik.se</a> &middot;
         <a href="https://www.instagram.com/villasjovik/" target="_blank" rel="noopener">@villasjovik</a>
       </p>
@@ -1957,8 +1538,9 @@ const cuObs=new IntersectionObserver(es=>es.forEach(e=>{
   const dur=1200,t0=performance.now();
   (function tick(now){
     const p=Math.min((now-t0)/dur,1),ease=1-Math.pow(1-p,3);
-    const n=Math.round(ease*v);
-    el.textContent=sep?n.toLocaleString('en-GB'):n;
+    const dec=+el.dataset.dec||0;
+    const n=dec?(ease*v).toFixed(dec):Math.round(ease*v);
+    el.textContent=sep?Number(n).toLocaleString('en-US'):n;
     if(p<1)requestAnimationFrame(tick);
     else if(window.gsap&&!PRM){ /* completion pop — the number lands with weight */
       const num=el.closest('.sc-num')||el;
@@ -1998,13 +1580,8 @@ document.querySelectorAll('.gc,.lc,.sp-c').forEach(card=>{
   const label=document.getElementById('snap-label');
   const dotsWrap=document.getElementById('snap-dots');
   if(!nav||!label||!dotsWrap)return;
-  const mqEl=document.getElementById('sec-mq');
   const sections=[
     {id:'sec-hero',label:'Intro',scrollTo:()=>0},
-    {id:'sec-spar',label:'Ideas',
-      scrollTo:()=>mqEl?(mqEl.getBoundingClientRect().top+window.scrollY-90):document.getElementById('sec-spar').getBoundingClientRect().top+window.scrollY-30,
-      trackStart:()=>mqEl?(mqEl.getBoundingClientRect().top+window.scrollY):document.getElementById('sec-spar').getBoundingClientRect().top+window.scrollY
-    },
     {id:'sec-profil',label:'Media kit'},
     {id:'sec-pr',label:'Investment'},
     {id:'sec-cta',label:'Contact'}
@@ -2129,7 +1706,7 @@ document.querySelectorAll('.gc,.lc,.sp-c').forEach(card=>{
     requestAnimationFrame(tick);
   }
 
-  // Step values: €0, €500, €1,000, €2,000 per production.
+  // Meta budget per production: €0 / €500 / €1,000 / €2,000.
   const STEP_VALUES=[0,500,1000,2000];
   const cardBudget={start:1000, season:1000};
   const PKG_MULT={start:1, season:3};
@@ -2358,56 +1935,6 @@ document.querySelectorAll('.gc,.lc,.sp-c').forEach(card=>{
   refreshCard('season');
 })();
 
-/* META-RÄCKVIDD AUTO-AKTIVERING — Kampanjpaket (featured) togglar ON automatiskt
-   när investerings-sektionen står stilla i view en kort stund, visas ett par
-   sekunder och stängs sedan av igen → tillbaka till Kampanjpaketets originalpris. */
-(function(){
-  const sec=document.getElementById('sec-pr');
-  const btn=document.querySelector('.pkg-col.featured .pkg-boost-head');
-  if(!sec||!btn)return;
-
-  try{if(sessionStorage.getItem('voltab-boost-autoactivated')==='true')return}catch(e){}
-  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-
-  const DELAY_MS=1800;
-  const SHOW_MS=2800;
-  const VIEW_THRESHOLD=0.45;
-
-  let triggered=false;
-  let timerId=null;
-
-  const obs=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(triggered)return;
-      if(e.isIntersecting){
-        if(timerId===null){
-          timerId=setTimeout(()=>{
-            timerId=null;
-            if(triggered)return;
-            const wrap=btn.closest('.pkg-boost');
-            const alreadyOn=wrap && wrap.getAttribute('aria-pressed')==='true';
-            if(alreadyOn){triggered=true;return;}
-            triggered=true;
-            obs.unobserve(sec);
-            if(wrap)wrap.classList.add('is-demo'); /* marked stagecraft — gold shimmer says "this is a demo" */
-            btn.click();
-            try{sessionStorage.setItem('voltab-boost-autoactivated','true')}catch(e){}
-            setTimeout(()=>{
-              const w2=btn.closest('.pkg-boost');
-              if(w2 && w2.getAttribute('aria-pressed')==='true'){btn.click();}
-            },SHOW_MS);
-            setTimeout(()=>{if(wrap)wrap.classList.remove('is-demo');},SHOW_MS+1200);
-          },DELAY_MS);
-        }
-      }else{
-        if(timerId!==null){clearTimeout(timerId);timerId=null;}
-      }
-    });
-  },{threshold:VIEW_THRESHOLD});
-
-  obs.observe(sec);
-})();
-
 /* BOKNINGSFLOW */
 (function(){
   const EN_MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -2600,16 +2127,16 @@ document.querySelectorAll('.gc,.lc,.sp-c').forEach(card=>{
     const d=state.selDate;
     const dateStr=`${EN_DAYS_LONG[d.getDay()]}, ${EN_MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
     const payload={
-      _subject:`New meeting request — ${document.getElementById('bk-name').value.trim()} (VOLTAB)`,
+      _subject:`New meeting booking: ${document.getElementById('bk-name').value.trim()} (VOLTAB)`,
       _template:'table',
       _captcha:'false',
-      BookingType:'Digital meeting via VOLTAB proposal',
+      Meeting:'Video meeting via VOLTAB image package',
       Date:dateStr,
       Time:state.selTime,
       Name:document.getElementById('bk-name').value.trim(),
       Email:document.getElementById('bk-email').value.trim(),
-      Message:document.getElementById('bk-msg').value.trim()||'—',
-      Source:'VOLTAB proposal (villasjovik.github.io/voltab)'
+      Message:document.getElementById('bk-msg').value.trim()||'No message',
+      Source:'VOLTAB image package (villasjovik.github.io/voltab)'
     };
 
     let sent=false;
@@ -2626,11 +2153,11 @@ document.querySelectorAll('.gc,.lc,.sp-c').forEach(card=>{
     }catch(err){/* nätverksfel — faller tillbaka till mailto */}
 
     if(sent){
-      doneText.textContent='We will reply within 24h with a calendar invitation and confirmation.';
+      doneText.textContent='A calendar invitation and time confirmation will arrive within 24 hours.';
       goStage(4);
     }else{
       const body=
-`New meeting request (digital meeting)
+`New meeting booking (video meeting)
 
 Date: ${dateStr}
 Time: ${state.selTime}
@@ -2641,10 +2168,10 @@ Email: ${payload.Email}
 Message:
 ${payload.Message}
 
-— Sent via VOLTAB proposal`;
+Sent via the VOLTAB image package`;
       const mailto=`mailto:${RECIPIENT}?subject=${encodeURIComponent(payload._subject)}&body=${encodeURIComponent(body)}`;
       window.location.href=mailto;
-      doneText.textContent='The booking opens in your email app — send it there to confirm the time. We will reply within 24h.';
+      doneText.textContent='The request has opened in your email app. Send it there to confirm. A reply will arrive within 24 hours.';
       goStage(4);
     }
     submitBtn.disabled=false;
